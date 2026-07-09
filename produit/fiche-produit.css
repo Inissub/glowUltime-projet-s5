@@ -12,32 +12,31 @@ body {
 }
 
 /* En-tête */
-.entete {
+.nav_navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #f5f0e8;
+    padding: 24px 34px;
+    background-color: #F3EBDF;
 }
-
-.logo {
-    font-size: 20px;
+.nav_titre{
     font-weight: 600;
-    letter-spacing: 2px;
-}
-
-.menu-navigation {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-}
-
-.menu-navigation a {
-    text-decoration: none;
-    color: #3a3a3a;
-    font-size: 14px;
+    font-size: 20px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    color: #6B6255;
+}
+.nav_ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 30px;
+}
+.nav_li{
+    display: inline;
+}
+.nav_a{
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 14px;
 }
 
 /* Fil d'Ariane */
@@ -120,4 +119,30 @@ footer {
     font-size: 13px;
     color: #8a8a8a;
     background-color: #f5f0e8;
+}
+@media screen and (max-width: 768px){
+        .nav_navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_ul{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+
+ 
+
+}
+@media screen and (max-width: 375px){
+    .nav_navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_ul{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+
 }

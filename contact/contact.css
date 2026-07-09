@@ -161,6 +161,7 @@ input[type="submit"]{
     color: var(--cream);
     font-size: 1rem;
     font-weight: 400;
+    border-radius: 5px;
 }
 .contact_form h2{
     font-size: 1.2rem;
@@ -270,4 +271,5 @@ footer{
     }
 
 }
+
 /*...........TRAVAIL DE KETSIA FINI ICI..........*/
