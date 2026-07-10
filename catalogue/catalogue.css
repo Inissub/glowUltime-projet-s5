@@ -2,13 +2,44 @@
     margin:0 ;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #FAF6F0;
+}
+/* En-tête */
+.nav_navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 34px;
+    background-color: #F3EBDF;
+}
+.nav_titre{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #6B6255;
+}
+.nav_ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 30px;
+}
+.nav_li{
+    display: inline;
+}
+.nav_a{
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 14px;
 }
 
 .glow {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0px;
     height:100vh;
     flex-direction:column;
     text-align:center;
@@ -47,7 +78,8 @@
 .catalogue h2{
      display: flex;
     justify-content: center;
-    font-size:3rem;
+    font-size: 30px;
+    margin-top: 50px;
 }
 .carte{
     display: flex;
@@ -65,31 +97,37 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 12px;
+    background-color: #ffff;
+    transition: 0.5s;
 }
 
 .cartes img{
     height:200px;
     width: 200px;
-    border-radius: 20px;
-    transition: 0.5s;
+
 }
-.cartes img:hover{
+.carte p{
+    color: #1d1d1d;
+    margin: 15px;
+}
+.cartes:hover{
     transform: translateY(-10px);
 }
 .cartes .prix{
     margin:12px 0 18px;
-    font-size:1.5rem;
-    color:#9a7618;
+    font-size:1rem;
+    color:#B98A4C;
     font-weight:bold;
 }
 .cartes button{
     height: 50px;
-    width:100px;
-    background:#1d1d1d;
+    width:150px;
+    background:#E3B98F;
     color:white;
     border:none;
     padding:10px;
-    border-radius:10px;
+    border-radius:5px;
     cursor:pointer;
     font-size:15px;
     transition:.3s;
@@ -105,7 +143,7 @@
     display: flex;
     justify-content: center;
     padding: 40px;
-    font-size: 50px;
+    font-size: 30px;
 }
 .grille{
    
@@ -121,6 +159,7 @@
     background-repeat: no-repeat;
     height: 300px;
     width: 500px;
+    border-radius: 5px;
 }
 .grille2{
     background: url(img/10.jpg);
@@ -128,6 +167,7 @@
     background-repeat: no-repeat;
       height: 300px;
     width: 500px;
+    border-radius: 5px;
 }
 .grille3{
    background: url(img/18.jpeg);
@@ -135,13 +175,15 @@
     background-repeat: no-repeat;
       height: 300px;
     width: 500px;
+    border-radius: 5px;
 }
 .grille4{
     background: url(img/4.jpg);
      background-size: cover;
     background-repeat: no-repeat;
-       height: 300px;
+    height: 300px;
     width: 500px;
+    border-radius: 5px;
 }
 .grille5{
     background: url(img/14.jpg);
@@ -149,6 +191,7 @@
     background-repeat: no-repeat;
     height: 300px;
     width: 500px;
+    border-radius: 5px;
 }
 .grille6{
    background: url(img/6.jpg);
@@ -156,6 +199,15 @@
     background-repeat: no-repeat;
        height: 300px;
     width: 500px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+    color: #8a8a8a;
+    background-color: #f5f0e8;
 }
 
 /* téléphone */
