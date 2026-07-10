@@ -276,7 +276,7 @@ body {
         padding: 15px 20px;
     }
     
-    .navbar nav {
+    .nav_navbar {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
