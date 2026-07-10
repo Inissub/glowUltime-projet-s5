@@ -1,0 +1,275 @@
+:root{
+    --cream:#FAF6F0;
+    --cream-deep:#F3EBDF;
+    --ink:#3B342C;
+    --ink-soft:#6B6255;
+    --tan:#E3B98F;
+    --tan-deep:#C9945F;
+    --gold:#B98A4C;
+    --line:#E6DCCB;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*...........TRAVAIL DE KETSIA..........*/
+
+body{
+    background-color: var(--cream);
+    font-family: "Poppins", sans-serif;
+}
+/* HEADER ET NAVBAR*/
+.nav_navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 34px;
+    background-color: var(--cream-deep);
+}
+.nav_titre{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.nav_ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 30px;
+}
+.nav_li{
+    display: inline;
+}
+.nav_a{
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 14px;
+}
+/* MAIN*/
+main{
+    margin: 30px 34px;
+}
+
+.cli_position span{
+    font-size: 0.8rem;
+}
+/* SECTION a_propos*/
+.a_propos{
+    text-align: center;
+    margin: 50px 0px;
+}
+.a_propos span{
+    color: var(--gold);
+}
+.a_propos h1{
+    margin: 20px 0px;
+    font-weight: 500;
+}
+.a_propos p{
+    color: var(--ink-soft);
+}
+/* SECTION moyen_contact*/
+.moyen_contact{
+    display: grid;
+    grid-template-areas: "cont_coordonée  cont_form cont_form"
+                        "cont_coordonée  cont_form cont_form";
+    height: 500px;
+    gap: 50px;
+    width: 900px;
+    margin: 0px auto;
+}
+
+.cont_coordonée{
+    grid-area: cont_coordonée;
+    background-color: var(--cream-deep);
+    padding: 20px;
+    border-radius: 5px;
+    border: solid 1px #c9945f34 ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cont_coordonée h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--ink);
+}
+.cont_coordonée small{
+    color: var(--ink-soft);
+}
+.ls_contact{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+}
+.ls_contact div{
+    display: flex;
+    border-top: solid 1px var(--tan);
+    height: 70px;
+    padding: 20px;
+}
+.ls_contact div img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.ls_contact div span{
+    display: block;
+    margin-left: 6px;
+}
+.ls_contact div span a{
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 0.8rem;
+}
+span , label{
+    color: var(--ink-soft);
+}
+small{
+    color: var(--ink-soft);
+    font-size: 0.8rem;   
+}
+
+.contact_form{
+    grid-area: cont_form;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact_form div{
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"], input[type="email"]{
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: solid 1px var(--tan);
+}
+textarea{
+    padding: 50px 0px;
+    border-radius: 5px;
+    border: solid 1px var(--tan);   
+}
+input[type="submit"]{
+    width: 200px;
+    padding: 10px;
+    background-color: var(--tan);
+    border: solid 1px var(--tan);
+    color: var(--cream);
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.contact_form h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--ink);
+}
+footer{
+    text-align: center;
+    padding: 50px 0px;
+    background-color: var(--cream-deep);
+    margin-top: 100px;
+}
+@media screen and (max-width: 1066px){
+    .moyen_contact{
+        display: grid;
+        grid-template-areas: "cont_coordonée"
+                            " cont_coordonée"
+                            "cont_form"
+                            "cont_form";
+        height: auto;
+        gap: 50px;
+        width: auto;
+    }
+    .cont_coordonée{
+        grid-area: cont_coordonée;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact_form{
+        grid-area: cont_form ;
+    }
+    input[type="submit"]{
+        margin-top: 10px;
+    }
+
+}
+@media screen and (max-width: 768px){
+        .nav_navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .moyen_contact{
+        display: grid;
+        grid-template-areas: "cont_coordonée"
+                            " cont_coordonée"
+                            "cont_form"
+                            "cont_form";
+        height: auto;
+        gap: 50px;
+        width: auto;
+    }
+    .cont_coordonée{
+        grid-area: cont_coordonée;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact_form{
+        grid-area: cont_form ;
+    }
+    input[type="submit"]{
+        margin-top: 10px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .nav_navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .moyen_contact{
+        display: grid;
+        grid-template-areas: "cont_coordonée"
+                            " cont_coordonée"
+                            "cont_form"
+                            "cont_form";
+        height: auto;
+        gap: 50px;
+        width: auto;
+    }
+    .cont_coordonée{
+        grid-area: cont_coordonée;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact_form{
+        grid-area: cont_form ;
+    }
+    input[type="submit"]{
+        margin-top: 10px;
+    }
+
+}
+
+/*...........TRAVAIL DE KETSIA FINI ICI..........*/

@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importation de polices élégantes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700&family=Poppins:wght=300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #121212;
+    background-color: #FAF6F0;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.act_header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav_navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 34px;
+    background-color: #F3EBDF;
+
+}
+.nav_titre{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #6B6255;
+}
+.nav_ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 30px;
+}
+.nav_li{
+    display: inline;
+}
+.nav_a{
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 14px;
+}
+
+
+
+.navbar a:hover {
+    color: #d4a373;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.opacity-mask {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* BOUTONS */
+.btn {
+    display: inline-block;
+    background: #d4a373;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    border: 1px solid #d4a373;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #d4a373;
+}
+
+/* PRODUITS */
+.products {
+    padding: 100px 8%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.products h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* SECTION POURQUOI CHOISIR (Ajouté pour harmoniser) */
+.why-us {
+    padding: 100px 8%;
+    text-align: center;
+    background: white;
+}
+
+.why-us h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.why-card {
+    padding: 20px;
+}
+
+.why-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    background: #fdf7f2;
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 400px;
+    text-align: center;
+    font-style: italic;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #d4a373;
+    object-fit: cover;
+}
+
+/* FOOTER (Ajouté pour harmoniser) */
+.footer {
+    background: #F3EBDF;
+    color: #6B6255;
+    text-align: center;
+    padding: 30px 8%;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVITÉ)
+   ========================================================================== */
+
+/* Pour les tablettes et petits écrans d'ordinateurs (max 992px) */
+@media screen and (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 3rem; 
+    }
+    
+    .navbar {
+        padding: 20px 5%; /* On réduit les marges latérales */
+    }
+    
+    .products, .why-us, .testimonials {
+        padding: 60px 5%; /* Des sections un peu moins hautes */
+    }
+}
+
+/* Pour les smartphones (max 768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    
+    .navbar nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .navbar a {
+        margin-left: 0; /* On annule la marge de gauche pour centrer proprement */
+        font-size: 13px;
+    }
+
+    
+    .hero {
+        height: 80vh; /* Légèrement plus bas sur mobile pour garder le bouton visible sans trop scroller */
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem; 
+        padding: 0 15px;
+    }
+    
+    .hero-content p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    
+    .product-grid, .why-grid {
+        grid-template-columns: 1fr; /* Une seule colonne par ligne */
+        gap: 30px;
+    }
+
+    .testimonial-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .testimonial {
+        max-width: 100%; /* Le texte prend toute la largeur disponible */
+    }
+}
