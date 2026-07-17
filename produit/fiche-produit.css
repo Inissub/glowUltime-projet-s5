@@ -1,3 +1,14 @@
+:root{
+    --cream:#FAF6F0;
+    --cream-deep:#F3EBDF;
+    --ink:#3B342C;
+    --ink-soft:#6B6255;
+    --tan:#E3B98F;
+    --tan-deep:#C9945F;
+    --gold:#B98A4C;
+    --line:#E6DCCB;
+}
+
 /* Reset de base */
 * {
     margin: 0;
