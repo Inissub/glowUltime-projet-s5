@@ -286,13 +286,6 @@ body {
         gap: 15px;
         padding: 15px 20px;
     }
-    
-    .nav_navbar {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
 
     .nav_ul {
         flex-direction: column;
@@ -302,11 +295,10 @@ body {
         margin-left: 0;
     }
     
-    .nav_navbar  a {
+    .nav a {
         margin-left: 0; /* On annule la marge de gauche pour centrer proprement */
         font-size: 13px;
     }
-
     
     .hero {
         height: 80vh; /* Légèrement plus bas sur mobile pour garder le bouton visible sans trop scroller */
