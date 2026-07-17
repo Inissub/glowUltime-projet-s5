@@ -21,6 +21,12 @@ body {
     color: #3a3a3a;
     background-color: #faf7f2;
 }
+/* header collé */
+.act_header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
 /* En-tête */
 .nav_navbar{
