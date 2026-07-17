@@ -1,3 +1,14 @@
+:root{
+    --cream:#FAF6F0;
+    --cream-deep:#F3EBDF;
+    --ink:#3B342C;
+    --ink-soft:#6B6255;
+    --tan:#E3B98F;
+    --tan-deep:#C9945F;
+    --gold:#B98A4C;
+    --line:#E6DCCB;
+}
+
 /* Reset de base */
 * {
     margin: 0;
@@ -9,6 +20,12 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #3a3a3a;
     background-color: #faf7f2;
+}
+/* header collé */
+.act_header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 /* En-tête */
@@ -143,6 +160,4 @@ footer {
         display: flex;
         flex-direction: column;
     }
- 
-
 }
